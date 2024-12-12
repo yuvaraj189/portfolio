@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
-import About from "./pages/About";
+
 import BlobCursor from "./components/BlobCursor";
 import Stars from "./components/Stars";
 import "./App.css"; // Import Tailwind styles and custom CSS if required.
@@ -21,7 +21,7 @@ const App = () => {
           {/* Routes */}
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
+         
             {/* Add other routes here */}
           </Routes>
         </div>
