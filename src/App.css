@@ -1,43 +1,43 @@
-/* Universe Background */
-.stars {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url('https://cdn.pixabay.com/photo/2017/08/30/23/40/space-2695569_960_720.jpg') repeat center center fixed;
-    animation: moveStars 200s linear infinite;
-    z-index: -1; /* Ensure it's in the background */
-    opacity: 0.8; /* Adjust opacity for visibility */
-  }
-  
-  .stars2 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url('https://cdn.pixabay.com/photo/2018/07/17/06/10/space-3549456_960_720.jpg') repeat center center fixed;
-    animation: moveStars2 300s linear infinite;
-    z-index: -1; /* Ensure it's in the background */
+body {
+  cursor: none; /* Hide the default cursor */
+}
+
+.blob-cursor {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(45deg, #ff6ec4, #7873f5);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform 0.2s ease, background 0.3s ease;
+  z-index: 9999;
+  pointer-events: none;
+  mix-blend-mode: difference; /* Makes the cursor more dynamic over various backgrounds */
+}
+
+.blob-cursor.hovered {
+  transform: translate(-50%, -50%) scale(1.5);
+  background: linear-gradient(45deg, #f39c12, #f1c40f);
+}
+
+.blob-cursor.pressed {
+  transform: translate(-50%, -50%) scale(0.8);
+  background: linear-gradient(45deg, #16a085, #1abc9c);
+}
+
+@keyframes twinkle {
+  0% {
     opacity: 0.5;
   }
-  
-  @keyframes moveStars {
-    from {
-      transform: translateY(0);
-    }
-    to {
-      transform: translateY(-100%);
-    }
+  50% {
+    opacity: 1;
   }
-  
-  @keyframes moveStars2 {
-    from {
-      transform: translateY(0);
-    }
-    to {
-      transform: translateY(100%);
-    }
+  100% {
+    opacity: 0.5;
   }
-  
+}
+
+.star {
+  border-radius: 50%;
+  position: absolute;
+}

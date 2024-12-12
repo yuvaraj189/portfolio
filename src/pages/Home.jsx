@@ -129,7 +129,7 @@ const HomePage = () => {
         'Optimized the website for performance, ensuring fast load times and smooth navigation.',
         'Ensured seamless user experience across all devices with a responsive design.'
       ],
-      github: 'https://github.com/your-repo-url' // Placeholder for GitHub link
+      github: 'https://github.com/yuvaraj189/Insurence-Website  ' // Placeholder for GitHub link
     }, {
       title: 'SHEC - Construction Company (Dubai)',
       description: [
@@ -159,7 +159,7 @@ const HomePage = () => {
         'Used SQL for managing large sets of event data with efficient querying for faster retrieval.',
         'Created a clean and simple user interface for an intuitive user experience.'
       ],
-      github: 'https://github.com/your-repo-url' // Placeholder for GitHub link
+      github: 'https://github.com/yuvaraj189/Event-whisperer' // Placeholder for GitHub link
     }].map((project, index) => (
       <div key={index} className="p-6 bg-black text-white rounded-lg border-2 border-indigo-400 shadow-md hover:shadow-lg transform transition-transform hover:scale-105">
         <h3 className="text-xl font-bold">{project.title}</h3>
@@ -185,74 +185,147 @@ const HomePage = () => {
 
       {/* Internship Section */}
       <section className="py-16 px-8 text-gray-900">
-      <h2 className="text-3xl font-bold text-center text-indigo-500 mb-8" data-aos="fade-up">
-        Internships
-      </h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        {[{
-          title: 'Full-Stack Developer | GetMax Healthcare Pvt Ltd.',
-          duration: 'Oct 2023 - Present · 1 yr 3 mos',
-          location: 'Chennai, Tamil Nadu, India',
-          description: [
-            'Leading the full-stack development of healthcare applications.',
-            'Collaborating with cross-functional teams for project success.',
-            'Implementing robust backend services and intuitive frontend solutions.',
-            'Managing project timelines and ensuring on-time delivery.',
-            'Optimizing performance for scalability and efficiency.'
-          ]
-        }, {
-          title: 'Data Analyst Intern | AltaPulse Network',
-          duration: 'Jun 2024 - Aug 2024 · 3 mos',
-          location: 'Remote',
-          description: [
-            'Analyzed data to generate actionable insights for marketing strategies.',
-            'Monitored key performance metrics of social media campaigns.',
-            'Created detailed reports to inform future strategies.',
-            'Utilized Power BI to visualize data for clear communication of findings.'
-          ]
-        }, {
-          title: 'Operation Management Intern | Rizzspace',
-          duration: 'May 2024 - Jul 2024 · 3 mos',
-          location: 'Remote',
-          description: [
-            'Demonstrated strong work ethic and operational knowledge.',
-            'Assisted in streamlining operational processes for improved efficiency.',
-            'Supported team in monitoring and reporting key performance metrics.',
-            'Collaborated on strategy development for operational improvements.'
-          ]
-        }, {
-          title: '2D Animation and VFX Artist Intern | Gen Z Marketers',
-          duration: 'May 2023 - Aug 2023 · 4 mos',
-          location: 'Remote',
-          description: [
-            'Created engaging digital content using animation and VFX tools.',
-            'Worked with Adobe After Effects, Adobe Premiere Pro, and Figma.',
-            'Collaborated with marketing teams to deliver creative assets for campaigns.',
-            'Gained expertise in UI/UX design and digital marketing strategies.'
-          ]
-        }].map((internship, index) => (
-          <div key={index} className="bg-gray-900 p-6 rounded-xl shadow-xl transform transition-all hover:scale-105 hover:shadow-2xl" data-aos="fade-up" data-aos-delay={index * 100}>
-            <div className="flex items-center space-x-4 mb-4">
-              <div className="w-1.5 h-16 bg-indigo-500"></div>
-              <h3 className="text-2xl font-semibold text-white">{internship.title}</h3>
-            </div>
-            <p className="text-sm text-white">{internship.duration} | {internship.location}</p>
-            <div className="mt-4 space-y-2">
-              {internship.description.map((point, idx) => (
-                <p key={idx} className="text-white text-sm">{point}</p>
-              ))}
-            </div>
-          </div>
-        ))}
+  <h2
+    className="text-3xl font-bold text-center text-indigo-500 mb-8"
+    data-aos="fade-up"
+  >
+    Internships
+  </h2>
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+    {[
+      {
+        title: 'Full-Stack Developer | GetMax Healthcare Pvt Ltd.',
+        duration: 'Oct 2023 - Present · 1 yr 3 mos',
+        location: 'Chennai, Tamil Nadu, India',
+        description: [
+          'Leading the full-stack development of healthcare applications.',
+          'Collaborating with cross-functional teams for project success.',
+          'Implementing robust backend services and intuitive frontend solutions.',
+          'Managing project timelines and ensuring on-time delivery.',
+          'Optimizing performance for scalability and efficiency.',
+        ],
+      },
+      {
+        title: 'Data Analyst Intern | AltaPulse Network',
+        duration: 'Jun 2024 - Aug 2024 · 3 mos',
+        location: 'Remote',
+        description: [
+          'Analyzed data to generate actionable insights for marketing strategies.',
+          'Monitored key performance metrics of social media campaigns.',
+          'Created detailed reports to inform future strategies.',
+          'Utilized Power BI to visualize data for clear communication of findings.',
+        ],
+      },
+      {
+        title: 'Operation Management Intern | Rizzspace',
+        duration: 'May 2024 - Jul 2024 · 3 mos',
+        location: 'Remote',
+        description: [
+          'Demonstrated strong work ethic and operational knowledge.',
+          'Assisted in streamlining operational processes for improved efficiency.',
+          'Supported team in monitoring and reporting key performance metrics.',
+          'Collaborated on strategy development for operational improvements.',
+        ],
+      },
+      {
+        title: '2D Animation and VFX Artist Intern | Gen Z Marketers',
+        duration: 'May 2023 - Aug 2023 · 4 mos',
+        location: 'Remote',
+        description: [
+          'Created engaging digital content using animation and VFX tools.',
+          'Worked with Adobe After Effects, Adobe Premiere Pro, and Figma.',
+          'Collaborated with marketing teams to deliver creative assets for campaigns.',
+          'Gained expertise in UI/UX design and digital marketing strategies.',
+        ],
+      },
+    ].map((internship, index) => (
+      <div
+        key={index}
+        className="bg-gray-900 p-6 rounded-xl shadow-xl transform transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-2xl"
+        data-aos="fade-up"
+        data-aos-delay={index * 100}
+      >
+        <div className="flex items-center space-x-4 mb-4">
+          <div className="w-1.5 h-16 bg-indigo-500"></div>
+          <h3 className="text-2xl font-semibold text-white">
+            {internship.title}
+          </h3>
+        </div>
+        <p className="text-sm text-white">
+          {internship.duration} | {internship.location}
+        </p>
+        <div className="mt-4 space-y-2">
+          {internship.description.map((point, idx) => (
+            <p key={idx} className="text-white text-sm">
+              {point}
+            </p>
+          ))}
+        </div>
       </div>
-    </section>
+    ))}
+  </div>
+</section>
+
+
+
+
+
+
 
 
 
       {/* Footer */}
-      <footer className="mt-16 text-center text-gray-400">
-        <p>&copy; {new Date().getFullYear()} Yuvaraj Kumar. All Rights Reserved.</p>
-      </footer>
+      <footer className="bg-black text-white py-10">
+  <div className="container mx-auto px-4">
+    {/* Quote Section */}
+    <div className="text-center mb-8">
+      <p className="text-xl font-bold text-indigo-400">
+        "The greatest glory in living lies not in never falling, but in rising every time we fall."
+      </p>
+      <p className="text-sm text-gray-400 mt-2">— Nelson Mandela</p>
+    </div>
+
+    {/* Interactive Links */}
+    <div className="flex justify-center space-x-8 mb-6">
+      <a 
+        href="https://www.linkedin.com/in/yuvaraj-kumar-s-8b7728258/" 
+        target="_blank" 
+        rel="noopener noreferrer" 
+        className="text-gray-400 hover:text-indigo-400 transition">
+        LinkedIn
+      </a>
+      <a 
+        href="https://github.com/yuvaraj189" 
+        target="_blank" 
+        rel="noopener noreferrer" 
+        className="text-gray-400 hover:text-indigo-400 transition">
+        GitHub
+      </a>
+      <a 
+        href="https://x.com/yuvaraj_7_" 
+        target="_blank" 
+        rel="noopener noreferrer" 
+        className="text-gray-400 hover:text-indigo-400 transition">
+        Twitter
+      </a>
+    </div>
+
+    {/* Divider */}
+    <div className="border-t border-gray-700 my-6"></div>
+
+    {/* Bottom Section */}
+    <div className="text-center text-sm text-gray-500">
+      <p>
+        Built with ❤️ by <span className="font-bold text-indigo-400">yuvaraj</span>. 
+        <br /> Unlearn & Relearn.
+      </p>
+    </div>
+  </div>
+</footer>
+
+
+
+
     </div>
   );
 };
