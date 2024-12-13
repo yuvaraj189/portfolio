@@ -118,7 +118,7 @@ const HomePage = () => {
 
       {/* Projects Section */}
       <section className="py-16 px-8 bg-cover bg-center" style={{ backgroundImage: 'url(https://source.unsplash.com/1600x900/?projects,dark)' }}>
-  <h2 className="text-3xl font-bold text-center text-indigo-400" data-aos="fade-up">Projects</h2>
+  <h2 className="text-3xl font-bold text-center text-indigo-500" data-aos="fade-up">Projects</h2>
   <div className="mt-8 grid grid-cols-2 md:grid-cols-2 gap-6" data-aos="fade-up" data-aos-delay="200">
     {[{
       title: 'Cubish - Fully Operational Insurance Website',
