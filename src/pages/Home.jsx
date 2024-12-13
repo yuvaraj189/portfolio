@@ -81,7 +81,7 @@ const HomePage = () => {
     {[
       { name: 'C', logo: 'https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/c.svg', link: 'https://en.wikipedia.org/wiki/C_(programming_language)' },
       { name: 'Python', logo: 'https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/python.svg', link: 'https://www.python.org/' },
-      { name: 'Java', logo: 'https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/java.svg', link: 'https://www.java.com/' }, // Updated Java logo
+      { name: 'Java', logo: 'https://img.icons8.com/?size=100&id=2572&format=png&color=000000', link: 'https://www.java.com/' }, // Updated Java logo
       { name: 'HTML', logo: 'https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/html5.svg', link: 'https://developer.mozilla.org/en-US/docs/Web/HTML' },
       { name: 'CSS', logo: 'https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/css3.svg', link: 'https://developer.mozilla.org/en-US/docs/Web/CSS' },
       { name: 'JavaScript', logo: 'https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/javascript.svg', link: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript' },

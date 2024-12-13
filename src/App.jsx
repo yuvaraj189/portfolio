@@ -4,14 +4,14 @@ import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 
 import BlobCursor from "./components/BlobCursor";
-import Stars from "./components/Stars";
+
 import "./App.css"; // Import Tailwind styles and custom CSS if required.
 
 const App = () => {
   return (
     <Router>
       <BlobCursor />
-      <Stars />
+      
       <div className="flex flex-col min-h-screen bg-black text-white relative">
         {/* Content Wrapper */}
         <div className="relative z-10">
