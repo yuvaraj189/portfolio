@@ -194,7 +194,8 @@ const HomePage = () => {
     className="text-3xl font-bold text-center text-indigo-500 mb-8"
     data-aos="fade-up"
   >
-    Internships
+    Experience
+
   </h2>
   <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
     {[
@@ -340,9 +341,9 @@ const HomePage = () => {
     {/* Quote Section */}
     <div className="text-center mb-8">
       <p className="text-xl font-bold text-indigo-400">
-        "The greatest glory in living lies not in never falling, but in rising every time we fall."
+      "Life isn’t about waiting for the storm to pass; it’s about learning to dance in the rain."
       </p>
-      <p className="text-sm text-gray-400 mt-2">— Nelson Mandela</p>
+      <p className="text-sm text-gray-400 mt-2">— Vivian Greene</p>
     </div>
 
     {/* Interactive Links */}
